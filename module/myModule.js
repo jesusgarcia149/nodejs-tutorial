@@ -4,6 +4,7 @@ module.exports = myWebAddress
 console.log(module);
 */
 
+
 const myWebAddress = 'jesuanxcs.com'
 const myNumer = 25
 const myArray = [10, 20, 30]
