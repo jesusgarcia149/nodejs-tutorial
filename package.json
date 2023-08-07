@@ -1,7 +1,11 @@
 {
-  "dependencies": {
-    "colors": "^1.4.0",
-    "dayjs": "^1.11.9",
-    "lodash": "^4.17.21"
-  }
+  "name": "nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "execute": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
