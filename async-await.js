@@ -11,6 +11,13 @@ const getText = (pathFile) => {
     });
 }
 
-getText('./data/fourth.txt')
-    .then((result) => console.log(result))
-    .catch(error => console.log(error))
+// getText('./data/fourth.txt')
+//    .then((result) => console.log(result))
+//    .catch(error => console.log(error))
+
+async function read(){
+    const result = await getText('./data/fourth.txt');
+    console.log(result);
+}
+
+read()
