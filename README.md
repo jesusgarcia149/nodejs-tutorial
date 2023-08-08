@@ -66,3 +66,5 @@
 - https://github.com/jesusgarcia149/nodejs-tutorial/tree/32.-Fetch
 ## 33.- Express
 - https://github.com/jesusgarcia149/nodejs-tutorial/tree/33.-Express
+## 34.- View HTML
+- https://github.com/jesusgarcia149/nodejs-tutorial/tree/34.-View_HTML
