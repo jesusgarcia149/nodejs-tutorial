@@ -33,3 +33,8 @@
     server.listen(3000)
     console.log('Server on Port 3000')
 ```
+
+## Run Server
+```console
+    node .\index.js
+```
