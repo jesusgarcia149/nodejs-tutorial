@@ -4,7 +4,7 @@
 ```
     npm init -y
     npm install express
-    npm install nodem
+    npm install nodemon
 ```
 
 ## Package.json
