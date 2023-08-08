@@ -1,13 +1,18 @@
 {
   "name": "nodejs-tutorial",
   "version": "1.0.0",
-  "description": "```javascript\r export function add (x, y){\r     return x + y\r }",
-  "main": "esmodule.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "description": ""
 }
