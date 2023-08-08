@@ -1,53 +1,35 @@
-# Express
+# View HTML
 
-## console
+## Console
 ```
     npm init -y
-    npm install express
-    npm install nodem
 ```
 
-## Package.json
-```JSON
-    {
-    "name": "nodejs-tutorial",
-    "version": "1.0.0",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon src/index.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.18.2"
-    },
-    "devDependencies": {},
-    "description": ""
-    }
-
+## index.html
+```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+    </html>
 ```
 
-## src/index.js
+## Index.js
 ```javascript
-    import express from 'express'
+    const http = require('http')
+    const fs = require('fs')
 
-    const app = express()
-
-    app.get('/', (req, res) => {
-        res.send('<h1>Welcome</h1>');
-    })
-    app.get('/about', (req, res) => {
-        res.send('<h1>About</h1>');
+    const server = http.createServer((req, res) => {
+        const read = fs.createReadStream('./index.html')
+        read.pipe(res)
     })
 
-    app.listen(3000)
-    console.log('Server on Port', 3000)
-```
-
-## console
-```
-    npm run dev
+    server.listen(3000)
+    console.log('Server on Port 3000')
 ```
