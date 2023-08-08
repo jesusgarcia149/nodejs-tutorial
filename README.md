@@ -1,5 +1,27 @@
 # Ecmascript Modules
 
+## console
+```
+    npm init -y
+```
+
+## package.json
+```JSON
+    {
+    "name": "nodejs-tutorial",
+    "version": "1.0.0",
+    "description": "```javascript\r export function add (x, y){\r     return x + y\r }",
+    "main": "esmodule.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+    }
+```
+
 ## math.js
 ```javascript
 export function add (x, y){
